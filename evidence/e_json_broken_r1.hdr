@@ -1,0 +1,23 @@
+HTTP/2 400 
+date: Mon, 16 Nov 2026 10:44:27 GMT
+content-type: text/html; charset=utf-8
+content-length: 138
+set-cookie: AWSALB=jDSzNYITuPlRGXdEB2+m1HYjwtFLAM/OEOI5vOEvIMA/sID9V4BIWnqW/05peE4E14J3rAxuTmhM8Sgc3SnXlUli7TNAjinDp1xHcTYWn6JBGeGbcrBpA3by3bHU; Expires=Mon, 23 Nov 2026 10:44:27 GMT; Path=/
+set-cookie: AWSALBCORS=jDSzNYITuPlRGXdEB2+m1HYjwtFLAM/OEOI5vOEvIMA/sID9V4BIWnqW/05peE4E14J3rAxuTmhM8Sgc3SnXlUli7TNAjinDp1xHcTYWn6JBGeGbcrBpA3by3bHU; Expires=Mon, 23 Nov 2026 10:44:27 GMT; Path=/; SameSite=None; Secure
+x-request-id: 52b3e0a3-ffef-4827-a815-6603996483dc
+cache-control: no-store, no-cache, must-revalidate, proxy-revalidate
+pragma: no-cache
+expires: 0
+strict-transport-security: max-age=31536000; includeSubDomains
+content-security-policy: default-src 'none'
+cross-origin-opener-policy: same-origin
+cross-origin-resource-policy: same-origin
+origin-agent-cluster: ?1
+referrer-policy: no-referrer
+x-content-type-options: nosniff
+x-dns-prefetch-control: off
+x-download-options: noopen
+x-frame-options: SAMEORIGIN
+x-permitted-cross-domain-policies: none
+x-xss-protection: 0
+

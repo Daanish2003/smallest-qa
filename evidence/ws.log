@@ -1,0 +1,173 @@
+2026-11-16 15:12:29.163 IST +    130ms [tts_happy1] connected in 129ms; handshake headers={'Date': 'Mon, 16 Nov 2026 09:42:29 GMT', 'Connection': 'upgrade', 'Upgrade': 'websocket', 'Sec-WebSocket-Accept': 'J6wa/kxtfo3Ay64IPVGlVsjswcE='}
+2026-11-16 15:12:29.316 IST +    283ms [tts_happy1] TTFB 153ms
+2026-11-16 15:12:29.316 IST +    283ms [tts_happy1] recv {"session_id": "fe3dcba5-89de-473a-85a9-a9641defeac4", "request_id": "0c7ecad0-8eef-4a85-b378-800663cf5256", "status": "chunk", "data": {"audio": "<4312 b64 chars>"}}
+2026-11-16 15:12:29.341 IST +    308ms [tts_happy1] recv {"session_id": "fe3dcba5-89de-473a-85a9-a9641defeac4", "request_id": "0c7ecad0-8eef-4a85-b378-800663cf5256", "status": "chunk", "data": {"audio": "<10240 b64 chars>"}}
+2026-11-16 15:12:33.596 IST +   4563ms [tts_happy1] recv {"session_id": "fe3dcba5-89de-473a-85a9-a9641defeac4", "request_id": "0c7ecad0-8eef-4a85-b378-800663cf5256", "status": "complete"}
+2026-11-16 15:12:33.596 IST +   4563ms [tts_happy1] complete after 4433ms; 11 chunks, ~72483 PCM bytes (~1.51s at 24kHz 16-bit)
+2026-11-16 15:12:48.611 IST +  19578ms [tts_happy1] server did NOT close within 15s after complete (state=OPEN)
+2026-11-16 15:12:50.767 IST +  21734ms [tts_happy2] connected in 123ms; handshake headers={'Date': 'Mon, 16 Nov 2026 09:42:50 GMT', 'Connection': 'upgrade', 'Upgrade': 'websocket', 'Sec-WebSocket-Accept': 'hdR/EYzSuR/zRX3QmNuJ8LcGM+E='}
+2026-11-16 15:12:50.932 IST +  21899ms [tts_happy2] TTFB 165ms
+2026-11-16 15:12:50.932 IST +  21899ms [tts_happy2] recv {"session_id": "2561fcc2-7eff-4abf-b7f5-a63c0a1348ed", "request_id": "7ce4be52-083f-4198-9bd5-fba9891e3d27", "status": "chunk", "data": {"audio": "<3200 b64 chars>"}}
+2026-11-16 15:12:50.956 IST +  21923ms [tts_happy2] recv {"session_id": "2561fcc2-7eff-4abf-b7f5-a63c0a1348ed", "request_id": "7ce4be52-083f-4198-9bd5-fba9891e3d27", "status": "chunk", "data": {"audio": "<6552 b64 chars>"}}
+2026-11-16 15:12:55.237 IST +  26204ms [tts_happy2] recv {"session_id": "2561fcc2-7eff-4abf-b7f5-a63c0a1348ed", "request_id": "7ce4be52-083f-4198-9bd5-fba9891e3d27", "status": "complete"}
+2026-11-16 15:12:55.237 IST +  26204ms [tts_happy2] complete after 4470ms; 13 chunks, ~84243 PCM bytes (~1.76s at 24kHz 16-bit)
+2026-11-16 15:13:10.250 IST +  41217ms [tts_happy2] server did NOT close within 15s after complete (state=OPEN)
+2026-11-16 15:13:12.407 IST +  43374ms [tts_happy3] connected in 123ms; handshake headers={'Date': 'Mon, 16 Nov 2026 09:43:12 GMT', 'Connection': 'upgrade', 'Upgrade': 'websocket', 'Sec-WebSocket-Accept': 'mBKNB/34yumr/6Tmbi+T3MrfU4U='}
+2026-11-16 15:13:12.560 IST +  43527ms [tts_happy3] TTFB 153ms
+2026-11-16 15:13:12.560 IST +  43527ms [tts_happy3] recv {"session_id": "8f4954bf-51ab-4ede-bc89-e3956bf788a2", "request_id": "b7b953bf-fb18-4a1d-a4c4-094da25e1357", "status": "chunk", "data": {"audio": "<6232 b64 chars>"}}
+2026-11-16 15:13:12.584 IST +  43551ms [tts_happy3] recv {"session_id": "8f4954bf-51ab-4ede-bc89-e3956bf788a2", "request_id": "b7b953bf-fb18-4a1d-a4c4-094da25e1357", "status": "chunk", "data": {"audio": "<10240 b64 chars>"}}
+2026-11-16 15:13:16.873 IST +  47840ms [tts_happy3] recv {"session_id": "8f4954bf-51ab-4ede-bc89-e3956bf788a2", "request_id": "b7b953bf-fb18-4a1d-a4c4-094da25e1357", "status": "complete"}
+2026-11-16 15:13:16.873 IST +  47840ms [tts_happy3] complete after 4466ms; 11 chunks, ~73923 PCM bytes (~1.54s at 24kHz 16-bit)
+2026-11-16 15:13:31.888 IST +  62855ms [tts_happy3] server did NOT close within 15s after complete (state=OPEN)
+2026-11-16 15:14:41.540 IST +     97ms [tts_auth:no_header] handshake rejected HTTP 401 body=bytearray(b'')
+2026-11-16 15:14:41.715 IST +    272ms [tts_auth:bad_key] handshake rejected HTTP 401 body=bytearray(b'')
+2026-11-16 15:14:57.166 IST +    161ms [tts_bad:not_json] recv {"request_id": "61e4ad03-adf5-43a9-a88b-8059f3cd8ea6", "status": "error", "message": "Invalid input data"}
+2026-11-16 15:14:58.353 IST +   1349ms [tts_bad:empty_text] recv {"request_id": "d4015bdb-a51d-40de-8f85-9111df3de923", "status": "error", "message": "Invalid input data", "errors": [{"code": "custom", "message": "text and voice_id are required unless cancel_request, flush or context_close is true, or the message ends a streamed input (context_id with continue: f
+2026-11-16 15:14:59.534 IST +   2529ms [tts_bad:bad_voice] recv {"request_id": "a827d786-6fd6-48bf-a95f-b215b4ab1eb8", "status": "error", "message": "Invalid input data", "errors": [{"code": "custom", "path": ["voice_id"], "message": "Voice 'no_such_voice' is not available on the lightning_v3.1_pro model"}]}
+2026-11-16 15:15:00.711 IST +   3707ms [tts_bad:bad_rate] recv {"request_id": "bc156455-7237-48b6-a58b-67dcc8c27648", "status": "error", "message": "Invalid input data", "errors": [{"code": "custom", "message": "Invalid sample rate", "path": ["sample_rate"]}]}
+2026-11-16 15:15:01.889 IST +   4885ms [tts_bad:missing_text] recv {"request_id": "c0b200db-93a3-4528-bc8e-3cdfe30f979a", "status": "error", "message": "Invalid input data", "errors": [{"code": "custom", "message": "text and voice_id are required unless cancel_request, flush or context_close is true, or the message ends a streamed input (context_id with continue: f
+2026-11-16 15:15:53.301 IST +    122ms [tts_happy1] connected in 122ms; handshake headers={'Date': 'Mon, 16 Nov 2026 09:45:53 GMT', 'Connection': 'upgrade', 'Upgrade': 'websocket', 'Sec-WebSocket-Accept': 'OgZ9KSFV+jcx9VU7/W+mbWkxjCY='}
+2026-11-16 15:15:53.471 IST +    292ms [tts_happy1] TTFB 169ms
+2026-11-16 15:15:53.471 IST +    292ms [tts_happy1] recv {"session_id": "c2196d7f-dd09-4aac-8739-584afe9b870d", "request_id": "74b692aa-d37a-4990-8574-f52d0d3b4240", "status": "chunk", "data": {"audio": "<6552 b64 chars>"}}
+2026-11-16 15:15:53.495 IST +    316ms [tts_happy1] recv {"session_id": "c2196d7f-dd09-4aac-8739-584afe9b870d", "request_id": "74b692aa-d37a-4990-8574-f52d0d3b4240", "status": "chunk", "data": {"audio": "<10240 b64 chars>"}}
+2026-11-16 15:15:57.787 IST +   4608ms [tts_happy1] recv {"session_id": "c2196d7f-dd09-4aac-8739-584afe9b870d", "request_id": "74b692aa-d37a-4990-8574-f52d0d3b4240", "status": "complete"}
+2026-11-16 15:15:57.787 IST +   4608ms [tts_happy1] LAST chunk at 454ms; complete at 4486ms; gap last-chunk->complete = 4032ms
+2026-11-16 15:15:57.787 IST +   4608ms [tts_happy1] complete after 4486ms; 12 chunks, ~81843 PCM bytes (~1.71s at 24kHz 16-bit)
+2026-11-16 15:16:53.333 IST +  60154ms [tts_happy1] UNEXPECTED frame after complete: {"status": "error", "message": "Connection timed out after 60 seconds of inactivity"}
+2026-11-16 15:16:55.456 IST +  62277ms [tts_happy2] connected in 121ms; handshake headers={'Date': 'Mon, 16 Nov 2026 09:46:55 GMT', 'Connection': 'upgrade', 'Upgrade': 'websocket', 'Sec-WebSocket-Accept': 'DKcKgRHtue91Nxx+GsU/Rc7FNlA='}
+2026-11-16 15:16:55.612 IST +  62433ms [tts_happy2] TTFB 155ms
+2026-11-16 15:16:55.612 IST +  62433ms [tts_happy2] recv {"session_id": "d42f5289-fc50-4c3b-95d0-37ca0f14ca04", "request_id": "8de1359f-e339-42aa-ac02-0d854066e2c4", "status": "chunk", "data": {"audio": "<10072 b64 chars>"}}
+2026-11-16 15:16:55.635 IST +  62456ms [tts_happy2] recv {"session_id": "d42f5289-fc50-4c3b-95d0-37ca0f14ca04", "request_id": "8de1359f-e339-42aa-ac02-0d854066e2c4", "status": "chunk", "data": {"audio": "<10240 b64 chars>"}}
+2026-11-16 15:16:59.870 IST +  66691ms [tts_happy2] recv {"session_id": "d42f5289-fc50-4c3b-95d0-37ca0f14ca04", "request_id": "8de1359f-e339-42aa-ac02-0d854066e2c4", "status": "complete"}
+2026-11-16 15:16:59.870 IST +  66691ms [tts_happy2] LAST chunk at 389ms; complete at 4414ms; gap last-chunk->complete = 4025ms
+2026-11-16 15:16:59.870 IST +  66691ms [tts_happy2] complete after 4414ms; 11 chunks, ~76803 PCM bytes (~1.60s at 24kHz 16-bit)
+2026-11-16 15:17:55.487 IST + 122308ms [tts_happy2] UNEXPECTED frame after complete: {"status": "error", "message": "Connection timed out after 60 seconds of inactivity"}
+2026-11-16 15:17:57.605 IST + 124426ms [tts_happy3] connected in 116ms; handshake headers={'Date': 'Mon, 16 Nov 2026 09:47:57 GMT', 'Connection': 'upgrade', 'Upgrade': 'websocket', 'Sec-WebSocket-Accept': 'S3bOFb8dmyx37ewBkvtVT725Zik='}
+2026-11-16 15:17:57.758 IST + 124579ms [tts_happy3] TTFB 153ms
+2026-11-16 15:17:57.758 IST + 124579ms [tts_happy3] recv {"session_id": "34fd5a50-08ea-4fd2-b053-1446671a4d25", "request_id": "2edc9e36-550a-4ba3-b59f-e4ec99c25320", "status": "chunk", "data": {"audio": "<3200 b64 chars>"}}
+2026-11-16 15:17:57.788 IST + 124609ms [tts_happy3] recv {"session_id": "34fd5a50-08ea-4fd2-b053-1446671a4d25", "request_id": "2edc9e36-550a-4ba3-b59f-e4ec99c25320", "status": "chunk", "data": {"audio": "<7192 b64 chars>"}}
+2026-11-16 15:18:02.116 IST + 128937ms [tts_happy3] recv {"session_id": "34fd5a50-08ea-4fd2-b053-1446671a4d25", "request_id": "2edc9e36-550a-4ba3-b59f-e4ec99c25320", "status": "complete"}
+2026-11-16 15:18:02.116 IST + 128937ms [tts_happy3] LAST chunk at 481ms; complete at 4511ms; gap last-chunk->complete = 4030ms
+2026-11-16 15:18:02.116 IST + 128937ms [tts_happy3] complete after 4511ms; 12 chunks, ~77043 PCM bytes (~1.61s at 24kHz 16-bit)
+2026-11-16 15:18:57.636 IST + 184456ms [tts_happy3] UNEXPECTED frame after complete: {"status": "error", "message": "Connection timed out after 60 seconds of inactivity"}
+2026-11-16 15:20:34.005 IST +   4560ms [tts_fv:baseline:1] recv @4425ms {"session_id": "9cd1c0e4-f35d-4097-9633-a496d9aaab9d", "request_id": "0bdfd558-d190-46f3-8a05-848078e2f72a", "status": "complete"}
+2026-11-16 15:20:34.005 IST +   4560ms [tts_fv:baseline:1] first chunk 162ms, LAST chunk 399ms, end 4425ms, gap 4026ms, 10 chunks
+2026-11-16 15:20:39.680 IST +  10236ms [tts_fv:flush_true:1] recv @4533ms {"session_id": "8dc0fc5b-e6e1-4fae-a138-2e6e26ad84f5", "request_id": "4862d158-1e99-4fdf-9c57-2d9cf593687c", "status": "complete"}
+2026-11-16 15:20:39.681 IST +  10236ms [tts_fv:flush_true:1] first chunk 148ms, LAST chunk 511ms, end 4533ms, gap 4022ms, 15 chunks
+2026-11-16 15:20:45.375 IST +  15930ms [tts_fv:maxflush100:1] recv @4551ms {"session_id": "d7fcaf42-9b1c-4996-9f61-593bbe5b0b32", "request_id": "639bc24d-89d2-4711-b210-5877cf80eaea", "status": "complete"}
+2026-11-16 15:20:45.375 IST +  15930ms [tts_fv:maxflush100:1] first chunk 264ms, LAST chunk 522ms, end 4551ms, gap 4029ms, 10 chunks
+2026-11-16 15:20:51.030 IST +  21585ms [tts_fv:baseline:2] recv @4513ms {"session_id": "7f4a8264-a030-4577-8ea6-834ff8769af8", "request_id": "4db7a5ea-a5bc-43ad-b9b0-39920ea76e9c", "status": "complete"}
+2026-11-16 15:20:51.030 IST +  21586ms [tts_fv:baseline:2] first chunk 147ms, LAST chunk 489ms, end 4513ms, gap 4024ms, 12 chunks
+2026-11-16 15:20:56.575 IST +  27130ms [tts_fv:flush_true:2] recv @4392ms {"session_id": "39c28801-69e7-497e-b1de-c95ce3bc655e", "request_id": "e6b5eaee-afb7-4183-9b0c-4db1009858d1", "status": "complete"}
+2026-11-16 15:20:56.575 IST +  27130ms [tts_fv:flush_true:2] first chunk 152ms, LAST chunk 372ms, end 4392ms, gap 4020ms, 11 chunks
+2026-11-16 15:21:02.424 IST +  32979ms [tts_fv:maxflush100:2] recv @4728ms {"session_id": "d90cafcc-64e9-4266-99b2-db15089de02f", "request_id": "87073590-a24d-4f13-bfef-c55f87330d4d", "status": "complete"}
+2026-11-16 15:21:02.424 IST +  32979ms [tts_fv:maxflush100:2] first chunk 242ms, LAST chunk 710ms, end 4728ms, gap 4018ms, 13 chunks
+2026-11-16 15:26:09.766 IST + 137289ms [stt] sample: 24000Hz ch=1 width=2 dur=5.60s
+2026-11-16 15:26:09.919 IST + 137441ms [stt_happy] resp headers={'Date': 'Mon, 16 Nov 2026 09:56:09 GMT', 'Connection': 'upgrade', 'Upgrade': 'websocket', 'Sec-WebSocket-Accept': '3gmrjou0utVN85i1jwsAMQqfadY='}
+2026-11-16 15:26:10.892 IST + 138414ms [stt_happy] recv {"type": "transcription", "status": "success", "transcription": "This is", "session_id": "fae70444-d493-4b03-8d67-0de1391918d5", "start": 0, "duration": 0.82, "transcript": "This is", "is_final": false, "is_last": false, "language": null, "languages": null}
+2026-11-16 15:26:11.883 IST + 139406ms [stt_happy] recv {"type": "transcription", "status": "success", "transcription": "This is a sample audio", "session_id": "fae70444-d493-4b03-8d67-0de1391918d5", "start": 0, "duration": 1.94, "transcript": "This is a sample audio", "is_final": false, "is_last": false, "language": null, "languages": null}
+2026-11-16 15:26:13.102 IST + 140625ms [stt_happy] recv {"type": "transcription", "status": "success", "transcription": "This is a sample audio file for testing spe", "session_id": "fae70444-d493-4b03-8d67-0de1391918d5", "start": 0, "duration": 3.06, "transcript": "This is a sample audio file for testing spe", "is_final": false, "is_last": false, "langua
+2026-11-16 15:26:14.107 IST + 141630ms [stt_happy] recv {"type": "transcription", "status": "success", "transcription": "This is a sample audio file for testing speech to text transcript", "session_id": "fae70444-d493-4b03-8d67-0de1391918d5", "start": 0, "duration": 4.18, "transcript": "This is a sample audio file for testing speech to text transcript", 
+2026-11-16 15:26:15.311 IST + 142834ms [stt_happy] recv {"type": "transcription", "status": "success", "transcription": " This is a sample audio file for testing speech to", "session_id": "fae70444-d493-4b03-8d67-0de1391918d5", "start": 0, "duration": 5.3, "transcript": " This is a sample audio file for testing speech to", "is_final": true, "is_last": fa
+2026-11-16 15:26:15.540 IST + 143063ms [stt_happy] sent all audio, sending close_stream
+2026-11-16 15:26:15.608 IST + 143130ms [stt_happy] recv {"type": "transcription", "status": "success", "transcription": " text transcription with the Pulse API.", "session_id": "fae70444-d493-4b03-8d67-0de1391918d5", "start": 5.3, "duration": 0.3, "transcript": " text transcription with the Pulse API.", "is_final": true, "is_last": true, "language": "en"
+2026-11-16 15:26:40.271 IST +    135ms [stt_ka] sent ping
+2026-11-16 15:26:40.300 IST +    165ms [stt_ka:ping] recv {"type": "pong"}
+2026-11-16 15:26:40.301 IST +    165ms [stt_ka] sent keepalive
+2026-11-16 15:26:40.331 IST +    195ms [stt_ka:keepalive] recv {"type": "pong"}
+2026-11-16 15:26:40.331 IST +    196ms [stt_ka] sent keep_alive
+2026-11-16 15:26:40.361 IST +    226ms [stt_ka:keep_alive] recv {"type": "pong"}
+2026-11-16 15:26:40.361 IST +    226ms [stt_ka] sent keep-alive
+2026-11-16 15:26:40.391 IST +    256ms [stt_ka:keep-alive] recv {"type": "pong"}
+2026-11-16 15:26:56.186 IST +    128ms [stt_timeout] connected with timeout=10, sending nothing
+2026-11-16 15:27:06.252 IST +  10194ms [stt_timeout10] recv {"status": "error", "message": "Connection timed out after 10 seconds of inactivity"}
+2026-11-16 15:27:06.253 IST +  10195ms [stt_timeout10] CLOSED code=1006 reason=''
+2026-11-16 15:27:30.542 IST +     99ms [stt:bad_encoding] recv {"type": "error", "message": "Invalid input data", "error": "Invalid enum value. Expected 'linear16' | 'linear32' | 'alaw' | 'mulaw' | 'opus' | 'ogg_opus', received 'mp9'"}
+2026-11-16 15:27:30.573 IST +    129ms [stt:bad_encoding] CLOSED code=1005 reason=''
+2026-11-16 15:27:30.659 IST +    216ms [stt:bad_model] handshake rejected HTTP 400 body=bytearray(b'{"status":"error","error_code":"INVALID_MODEL","message":"Invalid model query parameter: nope. Supported: pulse, pulse-2."}')
+2026-11-16 15:27:30.776 IST +    333ms [stt:bad_language] recv {"type": "error", "message": "Invalid input data", "error": "Invalid enum value. Expected 'en' | 'hi' | 'hi-dev' | 'zh' | 'ko' | 'ja' | 'yue' | 'ms' | 'id' | 'tl' | 'it' | 'es' | 'pt' | 'de' | 'fr' | 'uk' | 'ru' | 'pl' | 'cs' | 'sk' | 'nl' | 'lv' | 'et' | 'ro' | 'fi' | 'sv' | 'bg' | 'hu' | 'da' | 'l
+2026-11-16 15:27:30.808 IST +    365ms [stt:bad_language] CLOSED code=1005 reason=''
+2026-11-16 15:29:29.808 IST +    127ms [stt_timeout] connected with timeout=10, sending nothing
+2026-11-16 15:29:39.882 IST +  10201ms [stt_timeout10] recv {"status": "error", "message": "Connection timed out after 10 seconds of inactivity"}
+2026-11-16 15:29:39.882 IST +  10201ms [stt_timeout10] CLOSED code=1006 reason=''
+2026-11-16 15:29:58.602 IST +    121ms [stt:bad_encoding] recv {"type": "error", "message": "Invalid input data", "error": "Invalid enum value. Expected 'linear16' | 'linear32' | 'alaw' | 'mulaw' | 'opus' | 'ogg_opus', received 'mp9'"}
+2026-11-16 15:29:58.633 IST +    152ms [stt:bad_encoding] CLOSED code=1005 reason=''
+2026-11-16 15:29:58.721 IST +    240ms [stt:bad_model] handshake rejected HTTP 400 body=bytearray(b'{"status":"error","error_code":"INVALID_MODEL","message":"Invalid model query parameter: nope. Supported: pulse, pulse-2."}')
+2026-11-16 15:29:58.834 IST +    353ms [stt:bad_language] recv {"type": "error", "message": "Invalid input data", "error": "Invalid enum value. Expected 'en' | 'hi' | 'hi-dev' | 'zh' | 'ko' | 'ja' | 'yue' | 'ms' | 'id' | 'tl' | 'it' | 'es' | 'pt' | 'de' | 'fr' | 'uk' | 'ru' | 'pl' | 'cs' | 'sk' | 'nl' | 'lv' | 'et' | 'ro' | 'fi' | 'sv' | 'bg' | 'hu' | 'da' | 'l
+2026-11-16 15:29:58.865 IST +    384ms [stt:bad_language] CLOSED code=1005 reason=''
+2026-11-16 16:15:39.451 IST +    170ms [tts_happy1] connected in 170ms; handshake headers={'Date': 'Mon, 16 Nov 2026 10:45:39 GMT', 'Connection': 'upgrade', 'Upgrade': 'websocket', 'Sec-WebSocket-Accept': 'eDwKXSAgGIXSHHeOJiLDn1I7PAU='}
+2026-11-16 16:15:39.591 IST +    310ms [tts_happy1] TTFB 139ms
+2026-11-16 16:15:39.591 IST +    310ms [tts_happy1] recv {"session_id": "328d0ab6-cf3b-48c5-be59-130fd0a9246c", "request_id": "8c15ae55-1951-4198-b389-5343d056c214", "status": "chunk", "data": {"audio": "<9432 b64 chars>"}}
+2026-11-16 16:15:39.613 IST +    332ms [tts_happy1] recv {"session_id": "328d0ab6-cf3b-48c5-be59-130fd0a9246c", "request_id": "8c15ae55-1951-4198-b389-5343d056c214", "status": "chunk", "data": {"audio": "<10240 b64 chars>"}}
+2026-11-16 16:15:43.870 IST +   4589ms [tts_happy1] recv {"session_id": "328d0ab6-cf3b-48c5-be59-130fd0a9246c", "request_id": "8c15ae55-1951-4198-b389-5343d056c214", "status": "complete"}
+2026-11-16 16:15:43.870 IST +   4589ms [tts_happy1] LAST chunk at 396ms; complete at 4418ms; gap last-chunk->complete = 4022ms
+2026-11-16 16:15:43.870 IST +   4589ms [tts_happy1] complete after 4418ms; 12 chunks, ~84003 PCM bytes (~1.75s at 24kHz 16-bit)
+2026-11-16 16:16:39.483 IST +  60202ms [tts_happy1] UNEXPECTED frame after complete: {"status": "error", "message": "Connection timed out after 60 seconds of inactivity"}
+2026-11-16 16:16:41.578 IST +  62297ms [tts_happy2] connected in 92ms; handshake headers={'Date': 'Mon, 16 Nov 2026 10:46:41 GMT', 'Connection': 'upgrade', 'Upgrade': 'websocket', 'Sec-WebSocket-Accept': 'tB+tBDJMlt1LKtRtnovfxfOOss0='}
+2026-11-16 16:16:41.727 IST +  62446ms [tts_happy2] TTFB 149ms
+2026-11-16 16:16:41.727 IST +  62446ms [tts_happy2] recv {"session_id": "97e34e18-1cf9-4ac9-9f85-797372981a51", "request_id": "01662077-52f9-40a4-8236-f88fff2535dd", "status": "chunk", "data": {"audio": "<3200 b64 chars>"}}
+2026-11-16 16:16:41.752 IST +  62471ms [tts_happy2] recv {"session_id": "97e34e18-1cf9-4ac9-9f85-797372981a51", "request_id": "01662077-52f9-40a4-8236-f88fff2535dd", "status": "chunk", "data": {"audio": "<10392 b64 chars>"}}
+2026-11-16 16:16:46.068 IST +  66787ms [tts_happy2] recv {"session_id": "97e34e18-1cf9-4ac9-9f85-797372981a51", "request_id": "01662077-52f9-40a4-8236-f88fff2535dd", "status": "complete"}
+2026-11-16 16:16:46.068 IST +  66787ms [tts_happy2] LAST chunk at 465ms; complete at 4490ms; gap last-chunk->complete = 4025ms
+2026-11-16 16:16:46.068 IST +  66787ms [tts_happy2] complete after 4490ms; 14 chunks, ~94803 PCM bytes (~1.98s at 24kHz 16-bit)
+2026-11-16 16:17:41.608 IST + 122326ms [tts_happy2] UNEXPECTED frame after complete: {"status": "error", "message": "Connection timed out after 60 seconds of inactivity"}
+2026-11-16 16:17:43.726 IST + 124445ms [tts_happy3] connected in 117ms; handshake headers={'Date': 'Mon, 16 Nov 2026 10:47:43 GMT', 'Connection': 'upgrade', 'Upgrade': 'websocket', 'Sec-WebSocket-Accept': 'n1QE399I4Kc8wAzGNvZcKjGni48='}
+2026-11-16 16:17:43.880 IST + 124599ms [tts_happy3] TTFB 153ms
+2026-11-16 16:17:43.880 IST + 124599ms [tts_happy3] recv {"session_id": "e46061e8-fd19-4d28-aed9-52e44b59bbaa", "request_id": "cf3e7d1d-efd8-4d5a-9649-2bad4e2c7a2e", "status": "chunk", "data": {"audio": "<10072 b64 chars>"}}
+2026-11-16 16:17:43.902 IST + 124621ms [tts_happy3] recv {"session_id": "e46061e8-fd19-4d28-aed9-52e44b59bbaa", "request_id": "cf3e7d1d-efd8-4d5a-9649-2bad4e2c7a2e", "status": "chunk", "data": {"audio": "<10240 b64 chars>"}}
+2026-11-16 16:17:48.125 IST + 128844ms [tts_happy3] recv {"session_id": "e46061e8-fd19-4d28-aed9-52e44b59bbaa", "request_id": "cf3e7d1d-efd8-4d5a-9649-2bad4e2c7a2e", "status": "complete"}
+2026-11-16 16:17:48.126 IST + 128844ms [tts_happy3] LAST chunk at 377ms; complete at 4399ms; gap last-chunk->complete = 4022ms
+2026-11-16 16:17:48.126 IST + 128845ms [tts_happy3] complete after 4399ms; 11 chunks, ~76803 PCM bytes (~1.60s at 24kHz 16-bit)
+2026-11-16 16:18:43.756 IST + 184475ms [tts_happy3] UNEXPECTED frame after complete: {"status": "error", "message": "Connection timed out after 60 seconds of inactivity"}
+2026-11-16 16:18:45.967 IST +    102ms [tts_auth:no_header] handshake rejected HTTP 401 body=bytearray(b'')
+2026-11-16 16:18:46.168 IST +    303ms [tts_auth:bad_key] handshake rejected HTTP 401 body=bytearray(b'')
+2026-11-16 16:18:46.575 IST +    183ms [tts_bad:not_json] recv {"request_id": "a7d7ba65-f715-483b-8daf-9933e1ef7ccc", "status": "error", "message": "Invalid input data"}
+2026-11-16 16:18:47.771 IST +   1380ms [tts_bad:empty_text] recv {"request_id": "e8042ad7-0601-4ad6-ac0a-7f992d8c00ef", "status": "error", "message": "Invalid input data", "errors": [{"code": "custom", "message": "text and voice_id are required unless cancel_request, flush or context_close is true, or the message ends a streamed input (context_id with continue: f
+2026-11-16 16:18:48.944 IST +   2553ms [tts_bad:bad_voice] recv {"request_id": "5c5149a7-627b-4693-83f3-25734eb011fc", "status": "error", "message": "Invalid input data", "errors": [{"code": "custom", "path": ["voice_id"], "message": "Voice 'no_such_voice' is not available on the lightning_v3.1_pro model"}]}
+2026-11-16 16:18:50.130 IST +   3739ms [tts_bad:bad_rate] recv {"request_id": "649363b6-b5a9-4d23-aaf9-e84b1007b44f", "status": "error", "message": "Invalid input data", "errors": [{"code": "custom", "message": "Invalid sample rate", "path": ["sample_rate"]}]}
+2026-11-16 16:18:51.293 IST +   4901ms [tts_bad:missing_text] recv {"request_id": "964d9725-8f49-46e9-a801-8823089949ec", "status": "error", "message": "Invalid input data", "errors": [{"code": "custom", "message": "text and voice_id are required unless cancel_request, flush or context_close is true, or the message ends a streamed input (context_id with continue: f
+2026-11-16 16:18:57.213 IST +   4559ms [tts_fv:baseline:1] recv @4437ms {"session_id": "f664dadb-8a7f-4bc6-94bc-fd1a970a3796", "request_id": "a104518e-7aae-419b-868b-24a37243140b", "status": "complete"}
+2026-11-16 16:18:57.213 IST +   4559ms [tts_fv:baseline:1] first chunk 168ms, LAST chunk 414ms, end 4437ms, gap 4023ms, 11 chunks
+2026-11-16 16:19:02.766 IST +  10112ms [tts_fv:flush_true:1] recv @4395ms {"session_id": "13134baa-7f0b-4f14-9b0b-f150dbb0ec9f", "request_id": "4290ec9f-b868-456b-ab4f-2a98d33f7f8c", "status": "complete"}
+2026-11-16 16:19:02.766 IST +  10112ms [tts_fv:flush_true:1] first chunk 137ms, LAST chunk 373ms, end 4395ms, gap 4022ms, 12 chunks
+2026-11-16 16:19:08.432 IST +  15778ms [tts_fv:maxflush100:1] recv @4520ms {"session_id": "c9cb3833-55aa-42a2-8a77-ec602baa2f5c", "request_id": "69a673ed-8da4-4a5f-9a4a-c5963b088317", "status": "complete"}
+2026-11-16 16:19:08.433 IST +  15779ms [tts_fv:maxflush100:1] first chunk 245ms, LAST chunk 499ms, end 4520ms, gap 4021ms, 12 chunks
+2026-11-16 16:19:13.970 IST +  21316ms [tts_fv:baseline:2] recv @4393ms {"session_id": "90f21e28-5bbd-4e54-94a8-7a4f48594df8", "request_id": "50e7e293-66c4-401f-a2b8-e3a2516bf6d6", "status": "complete"}
+2026-11-16 16:19:13.970 IST +  21316ms [tts_fv:baseline:2] first chunk 151ms, LAST chunk 369ms, end 4393ms, gap 4024ms, 10 chunks
+2026-11-16 16:19:19.610 IST +  26956ms [tts_fv:flush_true:2] recv @4489ms {"session_id": "1e608c4f-ada5-45cf-8dc4-cff95989c1eb", "request_id": "65750720-f066-4ab6-ab4c-bd78652a3797", "status": "complete"}
+2026-11-16 16:19:19.611 IST +  26957ms [tts_fv:flush_true:2] first chunk 144ms, LAST chunk 465ms, end 4489ms, gap 4024ms, 14 chunks
+2026-11-16 16:19:25.281 IST +  32627ms [tts_fv:maxflush100:2] recv @4539ms {"session_id": "d0194409-6aad-4406-b760-64e74156e2f9", "request_id": "8725a9d4-37c2-46b9-837a-b02fa76c56a4", "status": "complete"}
+2026-11-16 16:19:25.281 IST +  32627ms [tts_fv:maxflush100:2] first chunk 261ms, LAST chunk 514ms, end 4539ms, gap 4025ms, 11 chunks
+2026-11-16 16:19:26.438 IST +      1ms [stt] sample: 24000Hz ch=1 width=2 dur=5.60s
+2026-11-16 16:19:26.579 IST +    143ms [stt_happy] resp headers={'Date': 'Mon, 16 Nov 2026 10:49:26 GMT', 'Connection': 'upgrade', 'Upgrade': 'websocket', 'Sec-WebSocket-Accept': 'YzOohRKT8Mit+IzuD1Wwjc+YK9w='}
+2026-11-16 16:19:27.554 IST +   1117ms [stt_happy] recv {"type": "transcription", "status": "success", "transcription": "This is", "session_id": "f9408710-f20f-4be6-a9d1-a2dddf0aeddf", "start": 0, "duration": 0.82, "transcript": "This is", "is_final": false, "is_last": false, "language": null, "languages": null}
+2026-11-16 16:19:28.557 IST +   2121ms [stt_happy] recv {"type": "transcription", "status": "success", "transcription": "This is a sample audio", "session_id": "f9408710-f20f-4be6-a9d1-a2dddf0aeddf", "start": 0, "duration": 1.94, "transcript": "This is a sample audio", "is_final": false, "is_last": false, "language": null, "languages": null}
+2026-11-16 16:19:29.761 IST +   3324ms [stt_happy] recv {"type": "transcription", "status": "success", "transcription": "This is a sample audio file for testing spe", "session_id": "f9408710-f20f-4be6-a9d1-a2dddf0aeddf", "start": 0, "duration": 3.06, "transcript": "This is a sample audio file for testing spe", "is_final": false, "is_last": false, "langua
+2026-11-16 16:19:30.766 IST +   4329ms [stt_happy] recv {"type": "transcription", "status": "success", "transcription": "This is a sample audio file for testing speech to text transcript", "session_id": "f9408710-f20f-4be6-a9d1-a2dddf0aeddf", "start": 0, "duration": 4.18, "transcript": "This is a sample audio file for testing speech to text transcript", 
+2026-11-16 16:19:31.970 IST +   5534ms [stt_happy] recv {"type": "transcription", "status": "success", "transcription": " This is a sample audio file for testing speech to", "session_id": "f9408710-f20f-4be6-a9d1-a2dddf0aeddf", "start": 0, "duration": 5.3, "transcript": " This is a sample audio file for testing speech to", "is_final": true, "is_last": fa
+2026-11-16 16:19:32.200 IST +   5764ms [stt_happy] sent all audio, sending close_stream
+2026-11-16 16:19:32.266 IST +   5830ms [stt_happy] recv {"type": "transcription", "status": "success", "transcription": " text transcription with the Pulse API.", "session_id": "f9408710-f20f-4be6-a9d1-a2dddf0aeddf", "start": 5.3, "duration": 0.3, "transcript": " text transcription with the Pulse API.", "is_final": true, "is_last": true, "language": "en"
+2026-11-16 16:19:32.491 IST +     98ms [stt_ka] sent ping
+2026-11-16 16:19:32.522 IST +    129ms [stt_ka:ping] recv {"type": "pong"}
+2026-11-16 16:19:32.522 IST +    129ms [stt_ka] sent keepalive
+2026-11-16 16:19:32.552 IST +    159ms [stt_ka:keepalive] recv {"type": "pong"}
+2026-11-16 16:19:32.552 IST +    159ms [stt_ka] sent keep_alive
+2026-11-16 16:19:32.582 IST +    189ms [stt_ka:keep_alive] recv {"type": "pong"}
+2026-11-16 16:19:32.582 IST +    189ms [stt_ka] sent keep-alive
+2026-11-16 16:19:32.613 IST +    219ms [stt_ka:keep-alive] recv {"type": "pong"}
+2026-11-16 16:19:32.863 IST +    128ms [stt_timeout] connected with timeout=10, sending nothing
+2026-11-16 16:19:42.924 IST +  10188ms [stt_timeout10] recv {"status": "error", "message": "Connection timed out after 10 seconds of inactivity"}
+2026-11-16 16:19:42.924 IST +  10188ms [stt_timeout10] CLOSED code=1006 reason=''
+2026-11-16 16:19:43.143 IST +    107ms [stt:bad_encoding] recv {"type": "error", "message": "Invalid input data", "error": "Invalid enum value. Expected 'linear16' | 'linear32' | 'alaw' | 'mulaw' | 'opus' | 'ogg_opus', received 'mp9'"}
+2026-11-16 16:19:43.174 IST +    138ms [stt:bad_encoding] CLOSED code=1005 reason=''
+2026-11-16 16:19:43.261 IST +    225ms [stt:bad_model] handshake rejected HTTP 400 body=bytearray(b'{"status":"error","error_code":"INVALID_MODEL","message":"Invalid model query parameter: nope. Supported: pulse, pulse-2."}')
+2026-11-16 16:19:43.352 IST +    316ms [stt:bad_language] recv {"type": "error", "message": "Invalid input data", "error": "Invalid enum value. Expected 'en' | 'hi' | 'hi-dev' | 'zh' | 'ko' | 'ja' | 'yue' | 'ms' | 'id' | 'tl' | 'it' | 'es' | 'pt' | 'de' | 'fr' | 'uk' | 'ru' | 'pl' | 'cs' | 'sk' | 'nl' | 'lv' | 'et' | 'ro' | 'fi' | 'sv' | 'bg' | 'hu' | 'da' | 'l
+2026-11-16 16:19:43.383 IST +    347ms [stt:bad_language] CLOSED code=1005 reason=''
+2026-11-16 16:19:43.620 IST +    134ms [stt_timeout] connected with timeout=10, sending nothing
+2026-11-16 16:19:53.686 IST +  10200ms [stt_timeout10] recv {"status": "error", "message": "Connection timed out after 10 seconds of inactivity"}
+2026-11-16 16:19:53.686 IST +  10200ms [stt_timeout10] CLOSED code=1006 reason=''
+2026-11-16 16:19:53.899 IST +    120ms [stt:bad_encoding] recv {"type": "error", "message": "Invalid input data", "error": "Invalid enum value. Expected 'linear16' | 'linear32' | 'alaw' | 'mulaw' | 'opus' | 'ogg_opus', received 'mp9'"}
+2026-11-16 16:19:53.930 IST +    151ms [stt:bad_encoding] CLOSED code=1005 reason=''
+2026-11-16 16:19:54.018 IST +    239ms [stt:bad_model] handshake rejected HTTP 400 body=bytearray(b'{"status":"error","error_code":"INVALID_MODEL","message":"Invalid model query parameter: nope. Supported: pulse, pulse-2."}')
+2026-11-16 16:19:54.139 IST +    360ms [stt:bad_language] recv {"type": "error", "message": "Invalid input data", "error": "Invalid enum value. Expected 'en' | 'hi' | 'hi-dev' | 'zh' | 'ko' | 'ja' | 'yue' | 'ms' | 'id' | 'tl' | 'it' | 'es' | 'pt' | 'de' | 'fr' | 'uk' | 'ru' | 'pl' | 'cs' | 'sk' | 'nl' | 'lv' | 'et' | 'ro' | 'fi' | 'sv' | 'bg' | 'hu' | 'da' | 'l
+2026-11-16 16:19:54.171 IST +    391ms [stt:bad_language] CLOSED code=1005 reason=''

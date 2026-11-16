@@ -1,0 +1,27 @@
+HTTP/2 400 
+date: Mon, 16 Nov 2026 10:44:35 GMT
+content-type: application/json; charset=utf-8
+content-length: 228
+set-cookie: AWSALB=uiCEFAvZc2uToDkN2v0iAn4SGIpI/yQVJJV24AkKx2QwPpM/2Ai8SfDheUKDgxxIkbn+67T3kAFVjIc/DhUGLJxWtElDrYvsZP8NL+8CHdj9vTSCZk8ZRoM4LiTa; Expires=Mon, 23 Nov 2026 10:44:35 GMT; Path=/
+set-cookie: AWSALBCORS=uiCEFAvZc2uToDkN2v0iAn4SGIpI/yQVJJV24AkKx2QwPpM/2Ai8SfDheUKDgxxIkbn+67T3kAFVjIc/DhUGLJxWtElDrYvsZP8NL+8CHdj9vTSCZk8ZRoM4LiTa; Expires=Mon, 23 Nov 2026 10:44:35 GMT; Path=/; SameSite=None; Secure
+x-request-id: 36a4960a-fe7f-44ab-a509-558b59b18256
+cache-control: no-store, no-cache, must-revalidate, proxy-revalidate
+pragma: no-cache
+expires: 0
+strict-transport-security: max-age=31536000; includeSubDomains
+content-security-policy: default-src 'self';script-src 'self';style-src 'self' 'unsafe-inline';img-src 'self' data: https://d1o0umtiv0iuvd.cloudfront.net https://d4a5s42qh2351.cloudfront.net https://waves-history.s3.ap-south-1.amazonaws.com https://waves-history-dev.s3.ap-south-1.amazonaws.com https://db2izkvf1oocn.cloudfront.net https://media.plivo.com https://dlw9ti8dmuxc7.cloudfront.net;connect-src 'self';frame-ancestors 'none';upgrade-insecure-requests;base-uri 'self';font-src 'self' https: data:;form-action 'self';object-src 'none';script-src-attr 'none'
+cross-origin-opener-policy: same-origin
+cross-origin-resource-policy: same-origin
+origin-agent-cluster: ?1
+referrer-policy: no-referrer
+x-content-type-options: nosniff
+x-dns-prefetch-control: off
+x-download-options: noopen
+x-frame-options: SAMEORIGIN
+x-permitted-cross-domain-policies: none
+x-xss-protection: 0
+vary: Origin
+access-control-allow-credentials: true
+access-control-expose-headers: Set-Cookie,X-Smallest-Prompt-Guard,X-Request-Id,Content-Disposition
+etag: W/"e4-gSux1ybwc7pAxtXUE/i+GE8bET0"
+
