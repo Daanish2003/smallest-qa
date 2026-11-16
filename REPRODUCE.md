@@ -63,8 +63,8 @@ Step 6 (speech-to-text REST error cases) was planned but not run. `ws_probe.py` 
 | **F3** | 3 or 5 simultaneous TTS requests all return 200 (docs: 1, else 429); the async docs example sends 3 at once with no status check | minor | `./step4_concurrency.sh`, `./step4b_concurrency5.sh` | `grep -P '\tc5?_' evidence/log.tsv`: all 200, totals ≈ a single call | 25/25 × 200, 15:07–15:09; e.g. 8ae9e3c3-9497-4597-800d-ec8574c0c4b6 |
 | **F1** | Error bodies come in 5 shapes (3 different 401 bodies, an array for validation, HTML for broken JSON, another shape on WS); no error format documented | minor | `./step3_tts_errors.sh`, `ws_probe.py tts_bad_inputs` | the body column in `log.tsv`; `e_json_broken` is `text/html` | 15:04–15:05; e.g. f1abae03-9abd-45b9-b314-a30c96f3358a (HTML) |
 | **F2** | `Content-Type: text/plain` with valid JSON → 400 "Text required" | minor | `./step3_tts_errors.sh` | `e_ctype_text_r*` | 5ecf6811-8a6d-43be-a823-2ff8d047dc14 |
-| **F6** | STT WS closes with 1006 after its documented timeout, and 1005 after a validation error | minor | `.venv/bin/python ws_probe.py stt_timeout 10`, `… stt_bad_params` | `CLOSED code=1006` / `code=1005` | 2/2, 15:27 and 15:29 |
-| **F7** | Bad STT params: `model` → HTTP 400 at handshake, `encoding`/`language` → accepted then an error frame; 3 error shapes; no ID in error frames | minor | `.venv/bin/python ws_probe.py stt_bad_params` | `handshake rejected HTTP 400` vs `recv {"type":"error"…}` | 2/2, 15:27 and 15:29 |
+| **F6** | STT WS closes with 1006 after its documented timeout, and 1005 after a validation error | minor | `.venv/bin/python ws_probe.py stt_timeout 10`, `… stt_bad_params` | `CLOSED code=1006` / `code=1005` | 4/4, 15:27, 15:29 and 16:39 (×2) |
+| **F7** | Bad STT params: `model` → HTTP 400 at handshake, `encoding`/`language` → accepted then an error frame; 3 error shapes; no ID in error frames | minor | `.venv/bin/python ws_probe.py stt_bad_params` | `handshake rejected HTTP 400` vs `recv {"type":"error"…}` | 4/4, 15:27, 15:29 and 16:39 (×2) |
 
 ## 6. Notes for anyone re-running
 

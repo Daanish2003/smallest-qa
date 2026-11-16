@@ -151,7 +151,7 @@ Session start: 2026-11-16 ~13:50 IST (docs reading + tooling).
 ### F6 — STT WebSocket closes without a proper close code: 1006 after the documented timeout, 1005 after a validation error
 - **Area:** APIs · **Severity (proposed):** minor
 - **Expected:** docs `features/keep-alive`: on inactivity timeout "the server sends `{"status":"error",…}` and terminates the socket". RFC 6455 clients distinguish a deliberate server close (close frame with a code, e.g. 1000/1008/1011 or 4xxx) from a network failure (1006). A customer expects a policy/timeout close to arrive as a close frame with a meaningful code.
-- **Observed:** 2/2 runs, identical:
+- **Observed:** 4/4 runs, identical — 2026-11-16 15:27 and 15:29 IST, and repeated 16:39:32 and 16:39:42 IST:
   - `timeout=10`, no audio → error frame at 10.07 s, then **close 1006** (abnormal closure: no close frame, TCP dropped). 2026-11-16 15:27:06 and 15:29:39 IST.
   - `encoding=mp9` or `language=xx` → error frame, then **close 1005** (close frame with no status code). 15:27:30 and 15:29:58 IST.
 - **Evidence:** `.venv/bin/python ws_probe.py stt_timeout 10` and `.venv/bin/python ws_probe.py stt_bad_params`, run twice; `evidence/ws.log` lines `[stt_timeout10] CLOSED code=1006`, `[stt:bad_encoding] CLOSED code=1005`, `[stt:bad_language] CLOSED code=1005`. URL: `wss://api.smallest.ai/waves/v1/stt/live?model=pulse&language=en&encoding=linear16&sample_rate=16000&timeout=10`.
@@ -160,7 +160,7 @@ Session start: 2026-11-16 ~13:50 IST (docs reading + tooling).
 ### F7 — STT WebSocket: invalid query parameters fail three different ways, and error frames carry no session or request ID
 - **Area:** APIs · **Severity (proposed):** minor
 - **Expected:** Invalid connection parameters rejected consistently (ideally at the handshake, as `model` is), in one error shape, with an identifier — docs `troubleshooting/error-reference` asks customers to quote `x-request-id` in every ticket.
-- **Observed:** 2/2 runs, identical (2026-11-16 15:27:30 and 15:29:58 IST):
+- **Observed:** 4/4 runs, identical (2026-11-16 15:27:30, 15:29:58, 16:39:42 and 16:39:53 IST):
 
 | Bad parameter | Handshake | What the client gets | Close |
 |---|---|---|---|

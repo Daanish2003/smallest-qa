@@ -171,3 +171,36 @@
 2026-11-16 16:19:54.018 IST +    239ms [stt:bad_model] handshake rejected HTTP 400 body=bytearray(b'{"status":"error","error_code":"INVALID_MODEL","message":"Invalid model query parameter: nope. Supported: pulse, pulse-2."}')
 2026-11-16 16:19:54.139 IST +    360ms [stt:bad_language] recv {"type": "error", "message": "Invalid input data", "error": "Invalid enum value. Expected 'en' | 'hi' | 'hi-dev' | 'zh' | 'ko' | 'ja' | 'yue' | 'ms' | 'id' | 'tl' | 'it' | 'es' | 'pt' | 'de' | 'fr' | 'uk' | 'ru' | 'pl' | 'cs' | 'sk' | 'nl' | 'lv' | 'et' | 'ro' | 'fi' | 'sv' | 'bg' | 'hu' | 'da' | 'l
 2026-11-16 16:19:54.171 IST +    391ms [stt:bad_language] CLOSED code=1005 reason=''
+2026-11-16 16:39:25.689 IST +     10ms [stt] sample: 24000Hz ch=1 width=2 dur=5.60s
+2026-11-16 16:39:25.859 IST +    180ms [stt_happy] resp headers={'Date': 'Mon, 16 Nov 2026 11:09:25 GMT', 'Connection': 'upgrade', 'Upgrade': 'websocket', 'Sec-WebSocket-Accept': 'YE3woYRN0xPGFvzkNP5/it6R5j4='}
+2026-11-16 16:39:26.834 IST +   1155ms [stt_happy] recv {"type": "transcription", "status": "success", "transcription": "This is", "session_id": "7ac52747-cb31-41d2-8b12-d55b4c3b1ab2", "start": 0, "duration": 0.82, "transcript": "This is", "is_final": false, "is_last": false, "language": null, "languages": null}
+2026-11-16 16:39:27.841 IST +   2162ms [stt_happy] recv {"type": "transcription", "status": "success", "transcription": "This is a sample audio", "session_id": "7ac52747-cb31-41d2-8b12-d55b4c3b1ab2", "start": 0, "duration": 1.94, "transcript": "This is a sample audio", "is_final": false, "is_last": false, "language": null, "languages": null}
+2026-11-16 16:39:29.048 IST +   3368ms [stt_happy] recv {"type": "transcription", "status": "success", "transcription": "This is a sample audio file for testing spe", "session_id": "7ac52747-cb31-41d2-8b12-d55b4c3b1ab2", "start": 0, "duration": 3.06, "transcript": "This is a sample audio file for testing spe", "is_final": false, "is_last": false, "langua
+2026-11-16 16:39:30.106 IST +   4427ms [stt_happy] recv {"type": "transcription", "status": "success", "transcription": "This is a sample audio file for testing speech to text transcript", "session_id": "7ac52747-cb31-41d2-8b12-d55b4c3b1ab2", "start": 0, "duration": 4.18, "transcript": "This is a sample audio file for testing speech to text transcript", 
+2026-11-16 16:39:31.254 IST +   5575ms [stt_happy] recv {"type": "transcription", "status": "success", "transcription": " This is a sample audio file for testing speech to", "session_id": "7ac52747-cb31-41d2-8b12-d55b4c3b1ab2", "start": 0, "duration": 5.3, "transcript": " This is a sample audio file for testing speech to", "is_final": true, "is_last": fa
+2026-11-16 16:39:31.493 IST +   5814ms [stt_happy] sent all audio, sending close_stream
+2026-11-16 16:39:31.559 IST +   5880ms [stt_happy] recv {"type": "transcription", "status": "success", "transcription": " text transcription with the Pulse API.", "session_id": "7ac52747-cb31-41d2-8b12-d55b4c3b1ab2", "start": 5.3, "duration": 0.3, "transcript": " text transcription with the Pulse API.", "is_final": true, "is_last": true, "language": "en"
+2026-11-16 16:39:31.804 IST +    127ms [stt_ka] sent ping
+2026-11-16 16:39:31.836 IST +    159ms [stt_ka:ping] recv {"type": "pong"}
+2026-11-16 16:39:31.836 IST +    159ms [stt_ka] sent keepalive
+2026-11-16 16:39:31.866 IST +    189ms [stt_ka:keepalive] recv {"type": "pong"}
+2026-11-16 16:39:31.866 IST +    190ms [stt_ka] sent keep_alive
+2026-11-16 16:39:31.897 IST +    220ms [stt_ka:keep_alive] recv {"type": "pong"}
+2026-11-16 16:39:31.897 IST +    220ms [stt_ka] sent keep-alive
+2026-11-16 16:39:31.927 IST +    250ms [stt_ka:keep-alive] recv {"type": "pong"}
+2026-11-16 16:39:32.158 IST +    119ms [stt_timeout] connected with timeout=10, sending nothing
+2026-11-16 16:39:42.224 IST +  10186ms [stt_timeout10] recv {"status": "error", "message": "Connection timed out after 10 seconds of inactivity"}
+2026-11-16 16:39:42.225 IST +  10186ms [stt_timeout10] CLOSED code=1006 reason=''
+2026-11-16 16:39:42.440 IST +    127ms [stt:bad_encoding] recv {"type": "error", "message": "Invalid input data", "error": "Invalid enum value. Expected 'linear16' | 'linear32' | 'alaw' | 'mulaw' | 'opus' | 'ogg_opus', received 'mp9'"}
+2026-11-16 16:39:42.470 IST +    157ms [stt:bad_encoding] CLOSED code=1005 reason=''
+2026-11-16 16:39:42.556 IST +    243ms [stt:bad_model] handshake rejected HTTP 400 body=bytearray(b'{"status":"error","error_code":"INVALID_MODEL","message":"Invalid model query parameter: nope. Supported: pulse, pulse-2."}')
+2026-11-16 16:39:42.646 IST +    334ms [stt:bad_language] recv {"type": "error", "message": "Invalid input data", "error": "Invalid enum value. Expected 'en' | 'hi' | 'hi-dev' | 'zh' | 'ko' | 'ja' | 'yue' | 'ms' | 'id' | 'tl' | 'it' | 'es' | 'pt' | 'de' | 'fr' | 'uk' | 'ru' | 'pl' | 'cs' | 'sk' | 'nl' | 'lv' | 'et' | 'ro' | 'fi' | 'sv' | 'bg' | 'hu' | 'da' | 'l
+2026-11-16 16:39:42.679 IST +    366ms [stt:bad_language] CLOSED code=1005 reason=''
+2026-11-16 16:39:42.899 IST +    126ms [stt_timeout] connected with timeout=10, sending nothing
+2026-11-16 16:39:52.962 IST +  10189ms [stt_timeout10] recv {"status": "error", "message": "Connection timed out after 10 seconds of inactivity"}
+2026-11-16 16:39:52.962 IST +  10189ms [stt_timeout10] CLOSED code=1006 reason=''
+2026-11-16 16:39:53.177 IST +    131ms [stt:bad_encoding] recv {"type": "error", "message": "Invalid input data", "error": "Invalid enum value. Expected 'linear16' | 'linear32' | 'alaw' | 'mulaw' | 'opus' | 'ogg_opus', received 'mp9'"}
+2026-11-16 16:39:53.207 IST +    161ms [stt:bad_encoding] CLOSED code=1005 reason=''
+2026-11-16 16:39:53.294 IST +    248ms [stt:bad_model] handshake rejected HTTP 400 body=bytearray(b'{"status":"error","error_code":"INVALID_MODEL","message":"Invalid model query parameter: nope. Supported: pulse, pulse-2."}')
+2026-11-16 16:39:53.412 IST +    367ms [stt:bad_language] recv {"type": "error", "message": "Invalid input data", "error": "Invalid enum value. Expected 'en' | 'hi' | 'hi-dev' | 'zh' | 'ko' | 'ja' | 'yue' | 'ms' | 'id' | 'tl' | 'it' | 'es' | 'pt' | 'de' | 'fr' | 'uk' | 'ru' | 'pl' | 'cs' | 'sk' | 'nl' | 'lv' | 'et' | 'ro' | 'fi' | 'sv' | 'bg' | 'hu' | 'da' | 'l
+2026-11-16 16:39:53.445 IST +    399ms [stt:bad_language] CLOSED code=1005 reason=''

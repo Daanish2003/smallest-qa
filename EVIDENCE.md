@@ -404,6 +404,15 @@ Expect a clear error frame, not a hang or silent close. Compare the shape with R
 | 16:19:31.970 | 5534 | `stt_happy` | `{"type": "transcription", "status": "success", "transcription": " This is a sample audio file for testing speech to", "session_id": "f9408710-f20f-4be6-a9d1-a2dddf0aeddf…` |
 | 16:19:32.200 | 5764 | `stt_happy` | sent all audio, sending close_stream |
 | 16:19:32.266 | 5830 | `stt_happy` | `{"type": "transcription", "status": "success", "transcription": " text transcription with the Pulse API.", "session_id": "f9408710-f20f-4be6-a9d1-a2dddf0aeddf", "start":…` |
+| 16:39:25.689 | 10 | `stt` | sample: 24000Hz ch=1 width=2 dur=5.60s |
+| 16:39:25.859 | 180 | `stt_happy` | connected |
+| 16:39:26.834 | 1155 | `stt_happy` | transcript “This is” (is_final=false, is_last=false) |
+| 16:39:27.841 | 2162 | `stt_happy` | transcript “This is a sample audio” (is_final=false, is_last=false) |
+| 16:39:29.048 | 3368 | `stt_happy` | `{"type": "transcription", "status": "success", "transcription": "This is a sample audio file for testing spe", "session_id": "7ac52747-cb31-41d2-8b12-d55b4c3b1ab2", "sta…` |
+| 16:39:30.106 | 4427 | `stt_happy` | `{"type": "transcription", "status": "success", "transcription": "This is a sample audio file for testing speech to text transcript", "session_id": "7ac52747-cb31-41d2-8b…` |
+| 16:39:31.254 | 5575 | `stt_happy` | `{"type": "transcription", "status": "success", "transcription": " This is a sample audio file for testing speech to", "session_id": "7ac52747-cb31-41d2-8b12-d55b4c3b1ab2…` |
+| 16:39:31.493 | 5814 | `stt_happy` | sent all audio, sending close_stream |
+| 16:39:31.559 | 5880 | `stt_happy` | `{"type": "transcription", "status": "success", "transcription": " text transcription with the Pulse API.", "session_id": "7ac52747-cb31-41d2-8b12-d55b4c3b1ab2", "start":…` |
 
 ### Step 7 — STT keep-alive aliases  ·  *W8*
 
@@ -427,6 +436,14 @@ Docs: `ping`, `keepalive`, `keep_alive`, `keep-alive` all behave identically (�
 | 16:19:32.582 | 189 | `stt_ka:keep_alive` | `{"type": "pong"}` |
 | 16:19:32.582 | 189 | `stt_ka` | sent keep-alive |
 | 16:19:32.613 | 219 | `stt_ka:keep-alive` | `{"type": "pong"}` |
+| 16:39:31.804 | 127 | `stt_ka` | sent ping |
+| 16:39:31.836 | 159 | `stt_ka:ping` | `{"type": "pong"}` |
+| 16:39:31.836 | 159 | `stt_ka` | sent keepalive |
+| 16:39:31.866 | 189 | `stt_ka:keepalive` | `{"type": "pong"}` |
+| 16:39:31.866 | 190 | `stt_ka` | sent keep_alive |
+| 16:39:31.897 | 220 | `stt_ka:keep_alive` | `{"type": "pong"}` |
+| 16:39:31.897 | 220 | `stt_ka` | sent keep-alive |
+| 16:39:31.927 | 250 | `stt_ka:keep-alive` | `{"type": "pong"}` |
 
 ### Step 7 — STT inactivity timeout (`timeout=10`)  ·  *W8, F6*
 
@@ -446,6 +463,12 @@ Docs: error message *“Connection timed out after N seconds of inactivity”*, 
 | 16:19:43.620 | 134 | `stt_timeout` | connected with timeout=10, sending nothing |
 | 16:19:53.686 | 10200 | `stt_timeout10` | `{"status": "error", "message": "Connection timed out after 10 seconds of inactivity"}` |
 | 16:19:53.686 | 10200 | `stt_timeout10` | **CLOSED code=1006 reason=''** |
+| 16:39:32.158 | 119 | `stt_timeout` | connected with timeout=10, sending nothing |
+| 16:39:42.224 | 10186 | `stt_timeout10` | `{"status": "error", "message": "Connection timed out after 10 seconds of inactivity"}` |
+| 16:39:42.225 | 10186 | `stt_timeout10` | **CLOSED code=1006 reason=''** |
+| 16:39:42.899 | 126 | `stt_timeout` | connected with timeout=10, sending nothing |
+| 16:39:52.962 | 10189 | `stt_timeout10` | `{"status": "error", "message": "Connection timed out after 10 seconds of inactivity"}` |
+| 16:39:52.962 | 10189 | `stt_timeout10` | **CLOSED code=1006 reason=''** |
 
 ### Step 7 — STT bad connection parameters  ·  *F6, F7*
 
@@ -473,4 +496,14 @@ Bad `encoding`, `model`, `language`. Watch **where** it fails (handshake vs afte
 | 16:19:54.018 | 239 | `stt:bad_model` | handshake rejected HTTP 400 body={"status":"error","error_code":"INVALID_MODEL","message":"Invalid model query parameter: nope. Supported: pulse, pulse-2."} |
 | 16:19:54.139 | 360 | `stt:bad_language` | `{"type": "error", "message": "Invalid input data", "error": "Invalid enum value. Expected 'en' \| 'hi' \| 'hi-dev' \| 'zh' \| 'ko' \| 'ja' \| 'yue' \| 'ms' \| 'id' \| 't…` |
 | 16:19:54.171 | 391 | `stt:bad_language` | **CLOSED code=1005 reason=''** |
+| 16:39:42.440 | 127 | `stt:bad_encoding` | `{"type": "error", "message": "Invalid input data", "error": "Invalid enum value. Expected 'linear16' \| 'linear32' \| 'alaw' \| 'mulaw' \| 'opus' \| 'ogg_opus', received…` |
+| 16:39:42.470 | 157 | `stt:bad_encoding` | **CLOSED code=1005 reason=''** |
+| 16:39:42.556 | 243 | `stt:bad_model` | handshake rejected HTTP 400 body={"status":"error","error_code":"INVALID_MODEL","message":"Invalid model query parameter: nope. Supported: pulse, pulse-2."} |
+| 16:39:42.646 | 334 | `stt:bad_language` | `{"type": "error", "message": "Invalid input data", "error": "Invalid enum value. Expected 'en' \| 'hi' \| 'hi-dev' \| 'zh' \| 'ko' \| 'ja' \| 'yue' \| 'ms' \| 'id' \| 't…` |
+| 16:39:42.679 | 366 | `stt:bad_language` | **CLOSED code=1005 reason=''** |
+| 16:39:53.177 | 131 | `stt:bad_encoding` | `{"type": "error", "message": "Invalid input data", "error": "Invalid enum value. Expected 'linear16' \| 'linear32' \| 'alaw' \| 'mulaw' \| 'opus' \| 'ogg_opus', received…` |
+| 16:39:53.207 | 161 | `stt:bad_encoding` | **CLOSED code=1005 reason=''** |
+| 16:39:53.294 | 248 | `stt:bad_model` | handshake rejected HTTP 400 body={"status":"error","error_code":"INVALID_MODEL","message":"Invalid model query parameter: nope. Supported: pulse, pulse-2."} |
+| 16:39:53.412 | 367 | `stt:bad_language` | `{"type": "error", "message": "Invalid input data", "error": "Invalid enum value. Expected 'en' \| 'hi' \| 'hi-dev' \| 'zh' \| 'ko' \| 'ja' \| 'yue' \| 'ms' \| 'id' \| 't…` |
+| 16:39:53.445 | 399 | `stt:bad_language` | **CLOSED code=1005 reason=''** |
 
